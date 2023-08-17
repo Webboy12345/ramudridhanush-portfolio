@@ -91,9 +91,12 @@
             positions me in a unique place in the web design world.
           </p>
           <div class="btns">
-            <button>Download CV</button> <button>Hire Me</button>
+            <button id="pdfButton">Download CV</button> <button> <a href="https://www.linkedin.com/in/dhanush-ramudri-09392124b/">Hire Me</a></button>
+            
           </div>
         </div>
+          <a id="pdfLink" href="Deedy_CV__1_%20(1).pdf" download style="display: none;"></a>
+
         <div class="p1">
           <div class="imgbox">
             <img src="image2.png" width="700px" id="splash" />
@@ -378,6 +381,12 @@
         menu.classList.toggle("open");
         icon.classList.toggle("open");
       }
+      const pdfButton = document.getElementById('pdfButton');
+    const pdfLink = document.getElementById('pdfLink');
+
+    pdfButton.addEventListener('click', () => {
+      pdfLink.click(); // Simulate a click on the hidden download link
+    });
     </script>
   </body>
 </html>
